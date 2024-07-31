@@ -16,7 +16,7 @@ public class UserRegisterTest extends BaseTestCase {
 
         Map<String, String> userData = new HashMap<>();
         userData.put("email", email);
-        userData.put("password", "123");
+        userData.put("password", "1234");
         userData.put("username", "polishevskyi");
         userData.put("firstName", "polishevskyi");
         userData.put("lastName", "polishevskyi");
