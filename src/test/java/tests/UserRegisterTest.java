@@ -17,9 +17,9 @@ public class UserRegisterTest extends BaseTestCase {
         Map<String, String> userData = new HashMap<>();
         userData.put("email", email);
         userData.put("password", "123");
-        userData.put("username", "learnqa");
-        userData.put("firstName", "learnqa");
-        userData.put("lastName", "learnqa");
+        userData.put("username", "polishevskyi");
+        userData.put("firstName", "polishevskyi");
+        userData.put("lastName", "polishevskyi");
 
         Response responseCreateAuth = RestAssured
                 .given()
