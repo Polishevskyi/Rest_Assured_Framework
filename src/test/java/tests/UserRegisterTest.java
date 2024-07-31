@@ -4,6 +4,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import lib.Assertions;
 import lib.BaseTestCase;
+import lib.DataGenerator;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -16,10 +17,7 @@ public class UserRegisterTest extends BaseTestCase {
 
         Map<String, String> userData = new HashMap<>();
         userData.put("email", email);
-        userData.put("password", "1234");
-        userData.put("username", "polishevskyi");
-        userData.put("firstName", "polishevskyi");
-        userData.put("lastName", "polishevskyi");
+        userData = DataGenerator.getRegistrationData(userData);
 
         Response responseCreateAuth = RestAssured
                 .given()
